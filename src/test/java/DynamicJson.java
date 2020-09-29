@@ -26,6 +26,26 @@ public class DynamicJson {
 
     public Object[][] getData() {
 
-        return new Object[][] {{"aaaaha","118111"},{"bbjbbb","228222"},{"cmcccc","33303"}};
+        return new Object[][] {{"aaadadha","00001"},{"bbjfdbbb","00002"},{"cmgfcccc","00003"}};
 }
+
+
+//@Test(dataProvider = "DeleteBooksData")
+//public void deletebook(String id){
+//       RestAssured.baseURI="http://216.10.245.166";
+//       String delresponse= given().log().all().header("Content-Type","application/json").
+//               body(Payload.DeleteBook(id)).when().
+//               post("/Library/DeleteBook.php").
+//               then().log().all().assertThat().statusCode(200).extract().response().asString();
+//
+//       JsonPath js1= ReusabaleMethods.rawToString(delresponse);
+////    String id1=js1.getString("ID");
+////    System.out.println("Deleted Book ID: "+id);
+//
+//}
+//@DataProvider(name="DeleteBooksData")
+//    public Object[] getID(){
+//
+//       return new Object[] {"00001","00002", "00003"};
+//}
 }
